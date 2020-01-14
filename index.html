@@ -12,6 +12,12 @@
         <script>
             alert('後期課題！！');
         </script>
+
+        <h2>2020年後期課題</h2>
+        作成:2020/01/28<br>
+        名前：ZM17180 橋本龍星<br>
+
+
         <h1>タイマー</h1>
         <form name="form_countdown">
             <input name="counter" type="text" value="10" size="10">
@@ -20,5 +26,17 @@
         </form>
         ※リセットで元の時（10）に戻ります。<br>
         ※０になった時も元に戻ります。<br>
+        
+        <h1>getElementByIdを使った切り替え</h1>
+        <p id="myid">こんにちは！</p>
+        <input type="button" value="挨拶を切り替える" onclick="myfunc()">
+        <script>
+            var myfunc = function(){
+            var myp = document.getElementById("myid");
+            myp.innerHTML = "こんばんは！";
+            }
+        </script><br>
+
+        <button onclick="location.href='./mondai.html'">次のページへ飛ぶ</button>
     </body>
 </html>
